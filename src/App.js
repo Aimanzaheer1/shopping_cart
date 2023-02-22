@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import Header from './Components/Header';
 import { useState } from 'react';
 import CartList from './Components/CartList';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
 
@@ -50,11 +51,17 @@ setCart([...cart,data])
   const[cart,setCart] = useState([]);
   return (
     <>
-      <Navbar></Navbar>
-      <Header cartitem={cart.length}></Header>
-   
-      <Productlist pro={products} addToCart={addToCart}></Productlist>
-   <CartList pro={cart}></CartList>
+     <Navbar></Navbar>
+    <BrowserRouter>
+    <Routes>
+    <Route path="/" element={ <Header cartitem={cart.length}></Header>}>
+     <Route index element={<Productlist pro={products} addToCart={addToCart}></Productlist>}/>
+      <Route path='cart' element={ <CartList pro={cart}></CartList>}/>
+      </Route>
+    </Routes>
+    </BrowserRouter>
+
+     
     </>
   )
 };

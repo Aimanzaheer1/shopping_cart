@@ -1,14 +1,14 @@
 .products {
-  display: flex;
   padding-top: 80px;
-  gap: 85px;
+  gap: 93px;
+  display: flex;
   padding-bottom: 119px;
   flex-wrap: wrap;
 }
 
 .image1 {
-  height: 161px;
-  width: 193px;
+  height: 187px;
+  width: 328px;
 }
 
 .topnav {
@@ -39,10 +39,12 @@
 .Cart {
   margin: auto;
   height: 30%;
-  display: flex;
+  display: grid;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
-  width: 882px;
+  width: 327px;
+  /* max-width: 104%; */
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }

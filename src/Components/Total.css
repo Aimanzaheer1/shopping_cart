@@ -20,19 +20,22 @@
 }
 .addca{
     position: absolute;
-    top: 30px;
-    font-size: 20px;
+    top: 111px;
+    font-size: 27px;
     text-decoration: none;
     right: 36px;
-    color: rgb(255, 255, 255);
+    background-color:#6F732F;
+    padding: 10px;
+    color: rgb(0 0 0);
 }
 .cartnum {
     position: absolute;
-    top: -5px;
-    font-size: 25px;
+    top: 67px;
+    font-size: 33px;
     text-decoration: none;
     right: 19px;
-    color: rgb(255, 255, 255);
+    color: rgb(0 0 0);
+   
 }
 
 
@@ -44,7 +47,10 @@
 }
 .sup{
     position: relative;
-    top: 9px;
-    left: 4px;
-    font-size: 23px;
+    top: 21px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    left: 13px;
+    
 }

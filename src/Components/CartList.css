@@ -19,3 +19,23 @@
        margin-bottom: 20px;
     }
     
+.return{
+    background-color: #6F732F;
+    border: none;
+    box-shadow: none;
+    padding: 10px;
+    position: absolute;
+    bottom: -53px;
+    /* bottom: 48px; */
+    text-decoration: none;
+    width: 15%;
+    color: white;
+
+    border-radius: 20px;
+    
+}
+.ret{
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+}

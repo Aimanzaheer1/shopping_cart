@@ -1,0 +1,50 @@
+.shop {
+    text-align: center;
+    position: relative;
+    list-style: none;
+    font-size: 40px;
+    text-decoration: none;
+    color: #6F732F;
+    top: 133px;
+    /* text-decoration: underline; */
+    border-bottom: 12px;
+    padding-bottom: 4px;}
+    
+.home {
+    position: absolute;
+    top: 32px;
+    font-size: 25px;
+    text-decoration: none;
+    left: 549px;
+    color: black;
+}
+.addca{
+    position: absolute;
+    top: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    right: 36px;
+    color: rgb(255, 255, 255);
+}
+.cartnum {
+    position: absolute;
+    top: -5px;
+    font-size: 25px;
+    text-decoration: none;
+    right: 19px;
+    color: rgb(255, 255, 255);
+}
+
+
+.count {
+    position: relative;
+    top: 10px;
+    left: 5px;
+    font-size: 25px;
+}
+.sup{
+    position: relative;
+    top: 9px;
+    left: 4px;
+    font-size: 23px;
+}

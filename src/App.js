@@ -1,10 +1,11 @@
 import './App.css';
 import Productlist from './Components/Productlist';
-import Navbar from './Components/Navbar';
-import Header from './Components/Header';
+import Header from './Components/Total';
 import { useState } from 'react';
 import CartList from './Components/CartList';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes  } from 'react-router-dom';
+import Topnav from './Components/Topnav';
+import Item  from './Components/Item';
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
     {
       "id": 1,
       "name": "Ruby Slipper",
-      "url": "https://images.squarespace-cdn.com/content/v1/5c6545f67046803f1f8c704e/1580343145357-D5XVK2YS2KJBYKPURBFM/IKO1703--Wizard-of-Oz-Ruby-Slippers-in-case-V2-SHOES-1.png",
+      "url": "https://raw.githubusercontent.com/jeff-lent/Alisnobba/main/Capstone/ActualRubyRubySlippers.jpg",
       "price": "$05",
       "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 
@@ -20,7 +21,7 @@ function App() {
     {
       "id": 2,
       "name": "Diamond Watch",
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJnjT1P94x84OvbVXZaAFxNdflUUFGiVrikUBHoNc&s",
+      "url": "https://raw.githubusercontent.com/jeff-lent/Alisnobba/main/Capstone/ChocolatePudding.png",
       "price": "$109",
       "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 
@@ -29,7 +30,7 @@ function App() {
     {
       "id": 3,
       "name": "Golden Toilet",
-      "url": "https://royaltoiletry.com/wp-content/uploads/2021/01/angular-plain-gold-toilet-8-350x350.jpg",
+      "url": "https://raw.githubusercontent.com/jeff-lent/Alisnobba/main/Capstone/GoldenToilet.jpg",
       "price": "$109",
       "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 
@@ -37,26 +38,31 @@ function App() {
     {
       "id": 4,
       "name": "LandYacht",
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtlx5m4xyWHly7-e4KwqbSFmu5LS4RnCa_nA&usqp=CAU",
+      "url": "https://raw.githubusercontent.com/jeff-lent/Alisnobba/main/Capstone/LandYachtMotorHome.jpg",
       "price": "109",
       "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 
     },
 
   ]);
-const addToCart =(data) =>{
+  const[cart,setCart] = useState([]);
+
+  const addToCart =(data) =>{
 // console.log(data);
 setCart([...cart,data])
 }
-  const[cart,setCart] = useState([]);
+  
   return (
     <>
-     <Navbar></Navbar>
+     <Topnav></Topnav>
     <BrowserRouter>
     <Routes>
+
     <Route path="/" element={ <Header cartitem={cart.length}></Header>}>
-     <Route index element={<Productlist pro={products} addToCart={addToCart}></Productlist>}/>
-      <Route path='cart' element={ <CartList pro={cart}></CartList>}/>
+    <Route path="/item/:id" element={<Item inam={products}/>} />
+     <Route index element={<Productlist inam={products} addToCart={addToCart}/>}/>   
+      <Route path='/cart' element={ <CartList inam={cart}></CartList>}/>
+      {/* <Route index path='/item' element={ <Productlist pro={cart} />}/> */}
       </Route>
     </Routes>
     </BrowserRouter>

@@ -1,0 +1,33 @@
+.table{
+    width: 22%;
+    padding: 21px;
+ 
+    top: 95px;
+    margin: auto;
+    margin-bottom: 45px;
+    border: 1px solid #7c6354;
+    box-shadow: 1px 2px 10px 20px #7c6354;
+    position: relative;
+}
+
+
+
+.top{
+    position: relative;
+    left: -7px;
+    top: 0px;
+}
+.cartimage {
+    width: 385px;
+}
+
+.title{
+padding-top: 5px;
+text-decoration: none;
+text-decoration: none;
+font-size: 32px;
+font-family: ‘Open Sans’;
+font-weight: 800;
+color: #202020;  
+}
+

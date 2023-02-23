@@ -1,29 +1,21 @@
-.table{
-    width: 73%;
-    padding: 21px;
-    margin-bottom: 45px;
-    margin-left: 225px;
-    border: 1px solid #7c6354;
-    box-shadow: 1px 2px 10px 20px #7c6354;
-}
 
-
-.top{
-    position: relative;
-    left: -7px;
-    top: 0px;
-}
 .cartimage {
-    width: 157px;
-}
-.title{
-    padding-top: 5px;
-    line-height: 10px;
-    text-align: center;
-    width: 226px;
-    font-size: 32px;
-    font-family: ‘Open Sans’;
-    font-weight: 800;
-    color: #202020;
-}
+  
+    height: 168px;}
 
+.table2 {
+    bottom: 2000px;
+    width: 84%;
+    padding: 21px;
+    top: 95px;
+    margin: auto;
+    margin-bottom: 45px;
+    border: 1px solid #7c6354;
+    box-shadow: 0px 2px 67px -24px #7c6354;
+    position: relative;
+    
+    }
+    .thead2{
+       margin-bottom: 20px;
+    }
+    

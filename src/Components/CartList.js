@@ -1,10 +1,11 @@
 import './CartList.css'
 
-function CartList({ pro }) {
+
+function CartList({ inam }) {
     return (
-        <table className='table'>
-            <thead className='thead'>
-                <tr className='top'>
+        <table className='table2'>
+            <thead className='thead2'>
+                <tr  >
                     <th>
                         S.No
                     </th>
@@ -21,30 +22,34 @@ function CartList({ pro }) {
                         Price
                     </th>
                 </tr>
+            
             </thead>
             {
-                pro.map((x, i) => {
+                inam.map((ecart, i) => {
                     return (
-                        <tr key={i}>
+                        <tr key={i} className='top2' >
                             <td className='list'>{i+1}</td>
                             <td className='list'>
-                                <img className='cartimage' src={x.url} />
+                                <img className='cartimage' src={ecart.url} />
                             </td>
                             <td className='list'>
-                                <h1 className='title'>{x.name}</h1>
+                                <h1 className='titlename'>{ecart.name}</h1>
                             </td>
                             <td className='list'>
-                                <p className='details'>{x.details}</p>
+                                <p className='details'>{ecart.details}</p>
                             </td>
                             <td className='list'>
-                                <p className='price'>{x.price}</p>
-                            </td>
+                                <p className='price'>{ecart.price}</p>
+                            </td> 
+                           
+
                         </tr>
                     )
                 })
             }
 
         </table>
+            
     )
 }
 export default CartList;
